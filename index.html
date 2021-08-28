@@ -15,12 +15,13 @@
     *{
       box-sizing: border-box;
       margin: 0%;
+      user-select : none;
     }
     body{
       font-family: 'Roboto', sans-serif;
     }
     .nav-container{
-      height: 72px;
+      height: 71px;
       background: #FFFFFA;
       box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     }
@@ -42,7 +43,6 @@
       font-weight: 800;
       font-size: 64px;
       color: #021718;
-      line-height: 96px;
 
     }
     .nav-items li{
@@ -61,10 +61,10 @@
 
     }
     .header-container{
-      background: rgb(224 226 247);
+      background: rgb(2 2 2);
       background-size: contain;
       background-position: right;
-      height: calc(100vh - 72px);
+      height: calc(100vh - 71px);
     }
     header{
       display: flex;
@@ -74,7 +74,7 @@
     header h1{
       font-weight: 800;
       font-size: 40px;
-      color: #021718; 
+      color: #fdfdfd; 
       margin-bottom: 25px; 
     }
     header p{
@@ -83,7 +83,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 20px;
-      color: #021718; 
+      color: #f7f7f7; 
       margin-bottom: 48px;
     }
     header a{
@@ -130,15 +130,14 @@
   <div class="nav-container">
     <div class="wrapper">
       <nav>
-        <div class="logo">
+        <div class="logo" onmousedown="return false">
           RBY.
         </div>
         <ul class="nav-items">
-          <li> <a href="#">Home</a> </li>
-          <li> <a href="#">Science</a> </li>
-          <li> <a href="#">Languages</a> </li>
-          <li> <a href="#">Education</a> </li>
-        </ul>
+          <li> <a href="#" onmousedown="return false">Home</a> </li>
+          <li> <a href="#" onmousedown="return false">Science</a> </li>
+          <li> <a href="#" onmousedown="return false">Languages</a> </li>
+       </ul>
       </nav>
     </div>
   </div>
@@ -149,10 +148,10 @@
         <div class="hero-content">
           <h1>Hi, I’m Rachid Ben Yassine</h1>
           <p>I design beautiful websites that modern trends demand.</p>
-          <a href="#">Contact Me</a>
+          <a href="#" onmousedown="return false">Contact Me</a>
         </div>
         <div class="hero-image">
-          <img src="cartoon.jpg" alt="cartoon" height="370px">
+          <img src="cartoon.jpg" alt="cartoon" height="370px" onmousedown="return false">
         </div>
       </header>
     </div>
